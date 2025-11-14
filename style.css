@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(60,64,198); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* width: 100vw;
+    height: 100vh; */
+    padding: 1rem 0rem;
+}
+
+.Parent{
+    background-color: lightpink;
+    width: 90%;
+    height: 80%;
+    width: 30rem;
+    /* height: 90rem; */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em 4em;
+}
+
+.card{
+    background-color: lightblue;
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex: wrap;
+}
+
+.card1 .child{
+    border: 1px solid black;
+    min-width: 70px;
+    min-height: 40px;
+}
