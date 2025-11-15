@@ -3,36 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
 body{
-    /* background-color: rgb(60,64,198); */
+    background-color: rgb(60,64,198);
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    /* width: 100vw;
-    height: 100vh; */
-    padding: 1rem 0rem;
 }
 
-.Parent{
+main{
     background-color: lightpink;
-    width: 90%;
-    height: 80%;
-    width: 30rem;
-    /* height: 90rem; */
-    border: 1px solid black;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* height: 100%;
+    width: 100%; */
+    width: 90%;
+    height: 90%;
+    /* height: 90rem; */
     flex-wrap: wrap;
-    gap: 1em 4em;
+    gap: 2em 4em;
 }
 
 .card{
     background-color: lightblue;
-    border: 1px solid black;
+    
     width: 350px;
     height: 250px;
     display: flex;
