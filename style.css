@@ -20,23 +20,28 @@ main{
     background-color: lightpink;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     /* height: 100%;
     width: 100%; */
-    width: 90%;
-    height: 90%;
-    /* height: 90rem; */
+    width: 80rem;
+    height: 38rem;
     flex-wrap: wrap;
-    gap: 2em 4em;
+    gap: 2em 3em;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
 }
 
 .card{
-    background-color: lightblue;
-    
-    width: 350px;
-    height: 250px;
+    background-color: white;
+    width: 360px;
+    height: 260px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .card .colors-div{
@@ -51,9 +56,9 @@ main{
 }
 
 .footer-div{
-    background-color: white;
-    height: 3.1em;
-    padding: 1em;
+    /* background-color: teal; */
+    height: 3em;
+    padding: 1em 0.5em;
     display: flex;
     justify-content: space-between;
 }
