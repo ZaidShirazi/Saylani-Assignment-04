@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
+html,body{
     width: 100%;
     height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav{
@@ -29,4 +35,20 @@ nav select{
     font-size: 1.1em;
     background-color: black;
     color: white;
+}
+
+main{
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors{
+    min-width: 16.8em;
+    height: 9.27em;
+    border: 1px solid black;
+    /* flex: 1; */
+    flex-basis: 20%;
 }
