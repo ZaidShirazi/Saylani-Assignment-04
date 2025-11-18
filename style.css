@@ -21,10 +21,12 @@ main{
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100vw;
+    height: 100vh;
     /* height: 100%;
     width: 100%; */
-    width: 80rem;
-    height: 38rem;
+    /* width: 80rem;
+    height: 38rem; */
     flex-wrap: wrap;
     gap: 2em 3em;
 }
@@ -62,3 +64,8 @@ main a{
     display: flex;
     justify-content: space-between;
 }
+
+/* Media Query Starts From Here */
+
+/* For Mobile Devices */
+
