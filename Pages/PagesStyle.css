@@ -32,10 +32,11 @@ nav a{
 }
 
 nav select{
-    height: 1.7em;
+    height: 80%;
     font-size: 1.1em;
     background-color: black;
     color: white;
+    border-radius: 5px;
 }
 
 main{
@@ -46,6 +47,11 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
 }
 
 .colors{
@@ -89,3 +95,14 @@ main{
 
 /* Media Query Starts From Here */
 
+@media screen and (max-width:1024px){
+    
+    .color-text{
+        display: none;
+    }
+
+    .copy-span{
+        display: none;
+    }
+
+}
