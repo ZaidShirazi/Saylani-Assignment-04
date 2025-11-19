@@ -10,25 +10,24 @@ html,body{
 }
 body{
     background-color: rgb(60,64,198);
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 main{
-    /* background-color: lightpink; */
+    background-color: lightpink;
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 100vw;
-    height: 100vh;
-    /* height: 100%;
-    width: 100%; */
+    min-height: 100vh;
+    width: 100%; 
     /* width: 80rem;
     height: 38rem; */
     flex-wrap: wrap;
     gap: 2em 3em;
+    padding: 1em;
 }
 
 main a{
@@ -67,5 +66,35 @@ main a{
 
 /* Media Query Starts From Here */
 
+/* @media (min-width:426) and (max-width: 768px){
+
+
+} */
+
 /* For Mobile Devices */
 
+@media screen and (max-width: 366px){
+    .card{
+    max-width: 300px;
+    max-height: 200px;
+    }
+
+    .card .child{
+    /* border: 1px solid black; */
+    width: 3.6em;
+    height: 2.3em;
+}
+}
+
+@media screen and (max-width: 304px){
+    .card{
+    min-width: 250px;
+    min-height: 150px;
+    }
+
+    .card .child{
+    /* border: 1px solid black; */
+    width: 3em;
+    height: 1.3em;
+}
+}
