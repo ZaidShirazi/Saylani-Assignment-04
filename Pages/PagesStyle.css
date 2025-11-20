@@ -57,7 +57,7 @@ main a{
 .colors{
     min-width: 16.8em;
     height: 9.27em;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* flex: 1; */
     flex-basis: 20%;
     display: flex;
