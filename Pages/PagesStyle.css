@@ -6,23 +6,25 @@
 }
 
 html,body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
 }
 
 body{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
 }
 
 nav{
-    border: 1px solid black;
-    min-height: 45px;
-    width: 100vw;
+    /* border: 1px solid black; */
+    min-height: 50px; 
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 1em;
+    padding: 0px 10px;
     font-size: 1.1em;
 }
 
@@ -32,17 +34,19 @@ nav a{
 }
 
 nav select{
-    height: 80%;
-    font-size: 1.1em;
+    width: 250px;
+    height: 35px;
+    font-size: 1rem;
     background-color: black;
     color: white;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 main{
     background-color: lightblue;
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,11 +59,8 @@ main a{
 }
 
 .colors{
-    min-width: 16.8em;
-    height: 9.27em;
-    /* border: 1px solid black; */
-    /* flex: 1; */
-    flex-basis: 20%;
+    width: 20%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -70,24 +71,30 @@ main a{
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 1.3em;
+   font-size: 1.2em;
 }
 
 .copy-span{
     color: rgba(255, 255, 255, 0.8);
     border: 3px solid white;
     border-radius: 5px;
-    width: 60%;
-    height: 50%;
+    width: 50%;
+    height: 40%;
     margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+}
+
+.copy-span:hover{
+    opacity: 1;
+    transition: 0.6s ease;
 }
 
 .color-text{
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1.4em;
+    font-size: 1.3em;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -105,4 +112,23 @@ main a{
         display: none;
     }
 
+}
+
+@media screen and (max-width:520px){
+
+    html,body{
+        min-width: 344px;
+        height: 882px;
+    }
+
+    nav select{
+    width: 115px;
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:2560px){
+    body{
+        font-size: 1.5em;
+    }
 }
